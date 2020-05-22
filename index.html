@@ -8,13 +8,75 @@
 </head>
 <body>
 <header><h1>Site Name</h1></header>
-<nav>
+<!-- <nav>
     <ul>
         <li><a href="#">Menu Item</a></li>
         <li><a href="#">Menu Item</a></li>
         <li><a href="#">Menu Item</a></li>
     </ul>
-</nav>
+</nav> -->
+
+<div id="topnav_desktop" class="topnav_desktop " role="banner">
+    <div class="topnav_desktop_wrapper">
+
+                                                        <form class="topnav_menu_search" action="//vimeo.com/search" method="get" role="search" data-ds-protection="">
+                    <input class="topnav_menu_search_input js-topnav_menu_search_input js-search_autocomplete js-search_vod_autocomplete js-search_stock_autocomplete" type="text" name="q" title="Buscar videos, personas y más" value="hola" aria-label="Buscar videos, personas y más" placeholder="Buscar videos, personas y más" autocomplete="off"><button class="topnav_menu_search_submit topnav_icon_search_b" type="submit" aria-label="Search"></button>
+                                    <ul class="autocomplete_wrapper" style="display: none;"></ul><ul class="autocomplete_wrapper" style="display: none;"></ul></form>
+
+                            <a class="topnav_desktop_logo" href="//vimeo.com"></a>
+            <a class="topnav_stock_logo" href="/stock">
+                <svg alt="Vimeo"
+            </a>
+                    <nav class="topnav_desktop_menu" role="navigation" aria-label="Menú principal">
+                <ul class="topnav_menu_desktop_main" role="menubar">
+
+                        <li class="topnav_desktop_menu_items" data-menu-id="join">
+                            <a class="topnav_menu_join js-topnav_menu_auth" onclick="event.preventDefault();vimeo.Modal.create({size:'xsmall',content:'/join?modal=new'}).then(completeUserLogin)" data-ga-event-click="top_nav|join" data-fatal-attraction="container:top_nav|component:join" data-gtm-click="top_nav_join_click" href="//vimeo.com/join" title="Conviértete en miembro de Vimeo" rel="toggle" role="button" aria-owns="topnav_join">
+                                Unirse                            </a>
+
+                                                                                </li>
+
+                        <li class="topnav_desktop_menu_items" data-menu-id="login">
+                            <a class="js-topnav_menu_auth" onclick="event.preventDefault();vimeo.Modal.create({size:'xsmall',content:'/log_in?modal=new'}).then(completeUserLogin)" data-ga-event-click="top_nav|login" data-fatal-attraction="container:top_nav|component:login" data-gtm-click="top_nav_login_click" href="//vimeo.com/log_in" title="Inicia sesión en tu cuenta" rel="toggle" role="button" aria-owns="topnav_login">
+                                Iniciar sesión                            </a>
+
+                                                                                </li>
+
+
+
+                </ul>
+            </nav><!-- /.topnav_desktop_menu -->
+
+                            <!-- <div class="topnav_menu_right">
+
+
+                                    <div class="topnav_desktop_video_popover" onmouseenter="trackNewVideoDropdownImpression()">
+                        <button id="new_video_dropdown_button" class="topnav_desktop_video_popover_button iris_btn--primary" data-fatal-attraction="container:top_nav|component:new_video" onclick="handleNewVideoClick()">
+                            <span class="topnav_desktop_video_popover_span_wrapper">
+                                <span class="topnav_desktop_video_popover_span">
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M18 11h-5V6a1 1 0 1 0-2 0v5H6a1 1 0 0 0 0 2h5v5a1 1 0 0 0 2 0v-5h5a1 1 0 0 0 0-2z" fill="#1a2e3b"></path>
+                                    </svg>
+                                </span>
+                                Nuevo video                            </span>
+                        </button>
+
+                                                    <ul class="topnav_desktop_menu_items_dropdown topnav_desktop_video_popover_dropdown" role="menu" aria-hidden="true">
+
+                                    <li class="topnav_desktop_menu_items_dropdown_item" role="menuitem" tabindex="-1">
+                                        <a data-fatal-attraction="container:top_nav|component:new_video|keyword:{'action':'upload'}|target:/upload|type:click" id="topnav_desktop_upload_button" href="//vimeo.com/upload">Subir</a>
+                                    </li>
+                                                            </ul>
+                                            </div>
+
+                <div id="cart_top_nav" class="topnav_cart_button"></div>
+
+            </div><!-- /.topnav_menu_right --> -->
+            </div><!-- /.topnav_desktop_wrapper -->
+</div>
+
+
+
 <main>
     <section class="showslisting left">
         <h2>Site Introduction</h2>
