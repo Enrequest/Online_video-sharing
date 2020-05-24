@@ -61,6 +61,12 @@ footer {
     clear: both;
 }
 
+.masthead{
+	background-color: white;
+}
+
+
+
 
 /* older mobile */
 @media only screen and (min-width: 320px) {
