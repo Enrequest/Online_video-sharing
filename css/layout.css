@@ -105,8 +105,7 @@ footer {
         display: none;
     }
     .description-section{
-        display: block;
-        width: 310px;
+        display: none;
     }
     .thumbnail {
         display: inline-block;
