@@ -50,10 +50,10 @@ div.tvshow{
     display: inline-block;   
 }
 
-.showdescription {
+/*.showdescription {
     display: none;
 }
-.description-section{
+*/.description-section{
     display: block;
     width: 311px;
 }
@@ -123,12 +123,11 @@ footer {
         display: block;   
     }
 
-    .showdescription {
+    .show-description {
         display: none;
     }
     .description-section{
-        display: block;
-        width: 470px;
+        display: none;
     }
     .thumbnail {
         display: inline-block;
@@ -145,12 +144,11 @@ footer {
         display: block;   
     }
 
-    .showdescription {
+    .show-description {
         display: none;
     }
     .description-section{
-        display: block;
-        width: 310px;
+        display: none;
     }
     .thumbnail {
         display: inline-block;
@@ -170,12 +168,35 @@ footer {
         width: 100%;
     }
 
-    .showdescription {
+    .show-description {
         white-space: normal;
         width: 125px;
+        display: inline;
+    }
+    .description-section{
+        display: block;
+        width: 310px;
     }
 }
 
 /* wide screen & TV */
 @media only screen and (min-width: 1200px) {
+    aside {
+        width: 33%;
+        display: block;
+    }
+
+    section.showslisting {
+        width: 100%;
+    }
+
+    .show-description {
+        white-space: normal;
+        width: 125px;
+        display: inline;
+    }
+    .description-section{
+        display: block;
+        width: 310px;
+    }
 }
