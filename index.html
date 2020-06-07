@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My first video Sharing project</title>
+		<link rel="stylesheet" type="text/css" href="w3css/w3.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style type="text/css">
+
+			.iris_masthead{
+				display: flex;
+				height: 56px;
+				padding: 0 16px;
+				align-items: center;
+			}
+			.masthead_search{
+				display: none;
+			}
+			.masthead_search2{
+				display: block;
+			}
+
+			.masthead_start{
+				display: flex;
+			}
+			.start-menu-button{
+				display: none;
+			}
+			.start-logo{
+				width: 129px;
+			}
+			.masthead_center{
+				float: right;
+				width: 100%;
+			}
+			.center_search{
+				display: none;
+			}
+			.masthead_end{
+				align-items: center;
+			}
+
+			.register1{
+				display: none;
+			}
+			.register2{
+				display: block;
+			}
+
+			.iris_p_infinite__grid{
+				background: #f5f5f5;
+			}
+			.iris_description{
+				display: none;
+			}
+			.iris_contents{
+				display: flex;
+				flex-wrap: wrap;
+				background: transparent;
+			}
+			.iris_p_infinite__item{
+				margin-right: 8px;
+				margin-left: 8px;
+				margin-bottom: 40px;
+			}
+			.iris_p_infinite__item img{
+				display: block;
+				width: 100%
+			}
+			.span-1{
+
+				width: calc(100% - 16px - .01px);
+			}
+
+			.iris_link_text{
+				text-decoration: none;
+			}
+			.iris_video_title{
+				font-weight: bold;
+				font-size: large;
+			}
+
+			/* small  screens & tablets */
+			@media only screen and (min-width: 768px) {
+				.span-1{
+					width: calc(100%/2 - 16px - .01px);
+				}
+			}
+
+			/* normal screen */
+			@media only screen and (min-width: 992px) {
+				.span-1{
+					width: calc(100%/3 - 16px - .01px);
+				}
+				.iris_description{
+					display: block;
+				}
+
+				.start-menu-button{
+					display: block;
+					margin: 0 16px 0 0;
+				}
+
+				.masthead_center{
+					display: flex;
+					align-items: center;
+					width: 100%;
+				}
+				.center_search{
+					display: block;
+				}
+
+				.masthead_end{
+					min-width: 225px;
+				}
+				.register1{
+					display: block;
+				}
+				.register2{
+					display: none;
+				}
+				.masthead_search{
+					display: flex;
+					width: 100%;
+					padding:0 4px;
+					margin-left: 40px;
+					margin-right: 40px;
+				}
+				.masthead_search2{
+					display: none;
+				}
+			}
+
+			/* wide screen & TV */
+			@media only screen and (min-width: 1200px) {
+				.span-1{
+					width: calc(100%/4 - 16px - .01px);
+				}
+				.iris_description{
+					display: block;
+				}
+
+				.start-menu-button{
+					display: block;
+					margin: 0 16px 0 0;
+				}
+
+				.center_search{
+					display: block;
+				}
+
+				.masthead_end{
+					min-width: 225px;
+				}
+				.register1{
+					display: block;
+				}
+				.register2{
+					display: none;
+				}
+				.masthead_search{
+					display: flex;
+					width: 100%;
+					padding:0 4px;
+					margin-left: 40px;
+					margin-right: 40px;
+				}
+				.masthead_search2{
+					display: none;
+				}
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<div class="iris_masthead">
+				<div class="masthead_start">
+
+					<button id="menu-button" class="w3-bar-item w3-button start-menu-button">&#9776;</button>
+					<div class="start-logo">
+						<img src="img/logo2.jpg" alt="Our beautiful logo" style="width: 80px">
+					</div>
+				</div>
+
+				<div class="masthead_center w3-center">
+
+					<div id="search" class="masthead_search">
+						<input type="text" class="w3-bar-item w3-input w3-white w3-round-large w3-border center_search" placeholder="Search">
+						<button class="w3-bar-item w3-button w3-light-gray w3-border">
+							<img src="img/search_logo_img.png" alt="Go" style="width: 17px">
+						</button>
+					</div>
+
+					<div class="masthead_search2" style="float:right;">
+						<div id="#search-icon" class="w3-hover-light-gray" style="height:40px; width:49px; padding-top: 8px;">
+							<img src="img/search_logo_img.png" alt="Go" style="width: 17px">
+						</div>
+					</div>
+				</div>
+
+				<div class="masthead_end w3-center">
+					<div class="register1">
+						<a href="#" class="w3-bar-item w3-button">Join</a>
+						<a href="#" class="w3-bar-item w3-button">Log in</a>
+					</div>
+
+					<div class="register2">
+						<a href="#">
+							<img alt="This is a beautiful image" src="img/drawing.png" style="width:41px; height: 61px;">
+						</a>
+					</div>
+				</div>
+
+			</div>
+		</header>
+
+		<main>
+			<div id="sidebar-section">
+				<div id="mySidebar" class="w3-sidebar w3-bar-block w3-border-right" style="display: none;">
+							<button id="close-button" class="w3-bar-item w3-large">Close &times;</button>
+
+							<a href="#" class="w3-bar-item w3-button">Página principal</a>
+							<a href="#" class="w3-bar-item w3-button">Tendencias</a>
+							<a href="#" class="w3-bar-item w3-button">Suscripciones</a>
+							<a href="#" class="w3-bar-item w3-button">Biblioteca</a>
+							<a href="#" class="w3-bar-item w3-button">Historial</a>
+							<a href="#" class="w3-bar-item w3-button">Videos que me gustan</a>
+				</div>
+
+				<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+			</div>
+
+			<!-- Item without margin -->
+			<div class="iris_p_infinite__grid">
+
+				<div class="iris_description" style="padding: 10px 25px;">
+					<h2>Site Description</h2>
+					<p>WeTube is a new video Sharing option, is Completely free, and we don't traking your activity.</p>
+				</div>
+
+				<div class="iris_contents">
+					<div class="iris_p_infinite__item span-1">
+						<div class="iris_video-vital">
+							<a class="iris_link_text" href="https://www.youtube.com/watch?v=OPlK5HwFxcw&list=RDOPlK5HwFxcw&start_radio=1">
+								<div>
+									<img alt="This is a beautiful image" src="img/cov.jpg">
+								</div>
+								<div>
+									<h5 class="iris_video_title">Functional Programming at Facebook.</h5>
+								</div>
+							</a>
+							<div>
+								<p>This is veery intersting video.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="iris_p_infinite__item span-1">
+						<div class="iris_video-vital">
+							<a class="iris_link_text" href="https://www.youtube.com/watch?v=rs5bc_P1kKo&list=RDOPlK5HwFxcw&index=2">
+								<div>
+									<img alt="This is a beautiful image" src="img/cov.jpg">
+								</div>
+								<div>
+									<h5 class="iris_video_title">Functional Programming at Facebook.</h5>
+								</div>
+							</a>
+							<div>
+								<p>This is veery intersting video.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="iris_p_infinite__item span-1">
+						<div class="iris_video-vital">
+							<a class="iris_link_text" href="https://www.youtube.com/watch?v=sOHE2E0DNUU">
+								<div>
+									<img alt="This is a beautiful image" src="img/cov.jpg">
+								</div>
+								<div>
+									<h5 class="iris_video_title">Functional Programming at Facebook.</h5>
+								</div>
+							</a>
+							<div>
+								<p>This is veery intersting video.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="iris_p_infinite__item span-1">
+						<div class="iris_video-vital">
+							<a class="iris_link_text" href="https://www.youtube.com/watch?v=zGiirUiWslI">
+								<div>
+									<img alt="This is a beautiful image" src="img/cov.jpg">
+								</div>
+								<div>
+									<h5 class="iris_video_title">Functional Programming at Facebook.</h5>
+								</div>
+							</a>
+							<div>
+								<p>This is veery intersting video.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="iris_p_infinite__item span-1">
+						<div class="iris_video-vital">
+							<a class="iris_link_text" href="https://www.youtube.com/watch?v=zGiirUiWslI">
+								<div>
+									<img alt="This is a beautiful image" src="img/cov.jpg">
+								</div>
+								<div>
+									<h5 class="iris_video_title">Functional Programming at Facebook.</h5>
+								</div>
+							</a>
+							<div>
+								<p>This is veery intersting video.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="iris_p_infinite__item span-1">
+						<div class="iris_video-vital">
+							<a class="iris_link_text" href="https://www.youtube.com/watch?v=zGiirUiWslI">
+								<div>
+									<img alt="This is a beautiful image" src="img/cov.jpg">
+								</div>
+								<div>
+									<h5 class="iris_video_title">Functional Programming at Facebook.</h5>
+								</div>
+							</a>
+							<div>
+								<p>This is veery intersting video.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="iris_p_infinite__item span-1">
+						<div class="iris_video-vital">
+							<a class="iris_link_text" href="https://www.youtube.com/watch?v=zGiirUiWslI">
+								<div>
+									<img alt="This is a beautiful image" src="img/cov.jpg">
+								</div>
+								<div>
+									<h5 class="iris_video_title">Functional Programming at Facebook.</h5>
+								</div>
+							</a>
+							<div>
+								<p>This is veery intersting video.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="iris_p_infinite__item span-1">
+						<div class="iris_video-vital">
+							<a class="iris_link_text" href="https://www.youtube.com/watch?v=zGiirUiWslI">
+								<div>
+									<img alt="This is a beautiful image" src="img/cov.jpg">
+								</div>
+								<div>
+									<h5 class="iris_video_title">Functional Programming at Facebook.</h5>
+								</div>
+							</a>
+							<div>
+								<p>This is veery intersting video.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</main>
+    	<script src="js/myScript.js"></script>
+		<footer class="w3-container">
+			<div><p>TM + © 2020 WeTube, Inc. All rights reserved.</p></div>
+		</footer>
+	</body>
+</html>
